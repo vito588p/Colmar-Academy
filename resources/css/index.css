@@ -6,7 +6,6 @@
 
 
 /* header and nav */
-
 header {
     width: 100%;
     height: 64px;
@@ -57,8 +56,8 @@ a {
 }
 
 /* main-banner */
-
 .banner {
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
     width: 100%;
     background-color: lightgray;
     display: flex;
@@ -74,25 +73,19 @@ a {
     width: 100%;
 }
 
-.bannertitle {
-    
-}
-
 .bannertitle h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: black;
     opacity: .7;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .bannertitle p {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 2rem;
     margin: 24px 0 36px;
     opacity: .7;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .bannerbtn {
@@ -101,9 +94,102 @@ a {
 }
 
 .bannerbtn a{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: darkslategray;
     color: white;
     padding: 8px 20px;
-    
+}
+
+
+/* article */
+.article {
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    background-color: white;
+    width: 100%;
+    display: grid;
+    /*
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: repeat(3, 1fr);
+    */
+    grid-template-areas: 
+    "focuspic articlea"
+    "focuspic articleb"
+    "focuscaption articlec"
+}
+
+/* left */
+.focus {
+   padding: 32px 24px 0;
+}
+
+.focuspic img {
+    width: 100%;
+}
+
+.focuscaption h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    opacity: .7;
+    color: black;
+    margin-top: 24px;
+}
+
+.focuscaption p {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: .8;
+    color: black;
+    margin-top: 24px;
+}
+
+.arthur {
+    font-style: italic;
+    float:inline-end;
+}
+
+/* right */
+.articles {
+    padding: 16px 0 0;
+}
+
+.articlea, .articleb, .articlec {
+    display: flex;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+}
+
+.articlefigure{
+    width: 35%;
+    height: auto;
+}
+
+.articlecaption {
+    width: 65%;
+    height: auto;
+    opacity: .7;
+    margin: auto;
+}
+
+.articlecaption h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.articlecaption p {
+    margin: 8px 0;
+}
+
+.readmore {
+    color: cornflowerblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+.articlea:hover, .articleb:hover, .articlec:hover {
+    background-color: rgb(193, 193, 193);
 }
